@@ -75,8 +75,13 @@ button,
   border-radius: 50px;
   cursor: pointer;
   border: 0;
-  color: white;
+  color: $white;
   font-weight: 400;
+  font-size: $font-sm;
+  transition: opacity 300ms ease-in-out;
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 // visibility
