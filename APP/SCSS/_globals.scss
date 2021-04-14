@@ -17,6 +17,11 @@ body {
   font-weight: 300;
   color: $grayishBlue;
   line-height: 1.3;
+
+  @include breakpoint-up(large) {
+    font-size: $font-med;
+  }
+
   &.noscroll {
     overflow: hidden;
   }
@@ -45,7 +50,7 @@ a:hover {
   max-width: 69.375rem;
   margin: 0 auto;
 
-  &-pall {
+  &--pall {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
     padding-right: 1.5rem;
